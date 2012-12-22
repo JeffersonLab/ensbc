@@ -1,0 +1,30 @@
+ENSBC is a fully functional binary calculator that operates on
+files in ``ensemble'' file format.
+
+To build, one simply types "make" and manually installs the binaries
+"calc", "calcbc", and "ensbc".
+
+For example, provided are files  filea, fileb, filec  in ensemble format.
+One can do
+
+% ensbc
+foo = filea + fileb*filec^3
+fred = filec / foo
+calc(fred)
+^D
+
+The ensemble file format looks like
+
+<#correlators> <time extent> <type 0=real, 1=complex> <space extent> <# columns>
+0 5.0 1.0
+1 5.1 1.01
+...
+<T-1> XXX XXX
+0 5.01 1.01
+1 5.2 1.2
+...
+<T-1> XXX XXX
+
+
+So, the time-slice listed correlators are appended one after another.
+
