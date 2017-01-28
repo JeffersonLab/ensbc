@@ -1,0 +1,7 @@
+to compile on a mac, download flex library through homebrew
+> brew install flex
+
+and edit one line in the GNUMakefile to point to the library:
+LIBS = -L/usr/local/lib -L/usr/local/opt/flex/lib -lfl -lm
+
+[ jjd ]
