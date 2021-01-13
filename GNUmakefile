@@ -8,8 +8,7 @@ BISON = bison
 BISONFLAGS = 
 
 CC = gcc
-#CFLAGS = -O -Wall -std=c99
-CFLAGS = -O -std=c99
+CFLAGS = -O -Wall -std=c99
 ##CC = xlc
 ##CFLAGS = -O
 #LIBS = -L/usr/local/lib -lfl -lm
