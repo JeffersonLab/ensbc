@@ -14,6 +14,7 @@ extern int errno;
 #endif
 
 void yyerror(char *);
+int yylex(void);
 
 /* Like YYERROR but do call yyerror.  */
 #define YYERROR1 { yyerror ("syntax error"); YYERROR; }

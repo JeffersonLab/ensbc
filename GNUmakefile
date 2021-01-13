@@ -8,10 +8,13 @@ BISON = bison
 BISONFLAGS = 
 
 CC = gcc
-CFLAGS = -O -Wall
+#CFLAGS = -O -Wall -std=c99
+CFLAGS = -O -std=c99
 ##CC = xlc
 ##CFLAGS = -O
-LIBS = -L/usr/local/lib -lfl -lm
+#LIBS = -L/usr/local/lib -lfl -lm
+LIBS = -L/usr/local/lib -L/usr/local/Cellar/flex/2.6.4_1/lib -lfl -lm
+
 
 # CC = cc -g 
 # LIBS = -L$(HOME)/lib/$(HOSTTYPE) -lfl
